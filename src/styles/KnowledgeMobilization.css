@@ -1,0 +1,15 @@
+.knowledge-mobilization-content {
+    padding: 20px;
+    text-align: center;
+    min-height: 800px;
+}
+
+.knowledge-mobilization-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.knowledge-mobilization-content p {
+    color: #555;
+    line-height: 1.6;
+}

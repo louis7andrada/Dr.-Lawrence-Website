@@ -1,0 +1,48 @@
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 800px;
+}
+
+.main-content {
+    flex: 1 1 60%;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 75%;
+    margin-left: 5vw;
+    height: auto;
+}
+
+.welcome-text {
+    margin-top: 20px;
+    margin-left: 10vw;
+    max-width: 75%;
+    padding: 20px;
+}
+
+.welcome-text h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.welcome-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.twitter-section {
+    flex: 1 1 35%;
+    margin-left: 2vw;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-content, .twitter-section {
+        flex: 1 1 100%;
+        margin-left: 0;
+    }
+}

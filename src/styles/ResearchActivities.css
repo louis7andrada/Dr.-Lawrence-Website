@@ -1,0 +1,15 @@
+.research-activities-content {
+    padding: 20px;
+    text-align: center;
+    min-height: 800px;
+}
+
+.research-activities-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.research-activities-content p {
+    color: #555;
+    line-height: 1.6;
+}

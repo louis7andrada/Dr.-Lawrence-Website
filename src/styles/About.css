@@ -1,0 +1,51 @@
+.about-content {
+    /*padding: 20px;*/
+    text-align: center;
+    min-height: 800px;
+}
+
+.about-submenu {
+    background-color: #b0b0b0;
+}
+
+.about-submenu ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 10px;
+}
+
+.about-submenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.about-submenu a {
+    text-decoration: none;
+    color: #0b3683;
+}
+
+.about-submenu a:hover {
+    text-decoration: underline;
+}
+
+.subpage {
+    max-width: 1000px; /* Set the maximum width */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Align text to the left for better readability */
+}
+
+.subpage p{
+    line-height: 1.6;
+}
+
+.logo2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo2 img {
+    max-width: 75%;
+    height: auto;
+}

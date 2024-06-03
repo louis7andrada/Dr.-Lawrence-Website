@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoh {
+    margin-right: 10px;
+}
+
+.logoh img {
+    max-width: 100px;
+    height: auto;
+}
+
+.title {
+    flex-grow: 1; /* This will allow the title to take up available space */
+    display: flex;
+    align-items: center; /* Center align vertically */
+}
+
+.title a {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #000 !important;
+    font-family: "Times New Roman", Times, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    visibility: visible;
+    margin: 0 15px;
+    opacity: 1;
+}
+
+nav li:hover {
+    opacity: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* align-items: flex-start; /* Ensure items align to the start (left) */
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 1.2em;
+        /* align-items: flex-start; /* Ensure title aligns to the start (left) */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+}

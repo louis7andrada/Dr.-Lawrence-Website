@@ -1,0 +1,35 @@
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    min-height: 800px;
+}
+
+.blog-content h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-content p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.twitter-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1250px; /* Limit the width of the Twitter timeline */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-container iframe {
+    width: 100% !important;
+    max-width: 100%;
+}

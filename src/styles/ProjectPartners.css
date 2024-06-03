@@ -1,0 +1,15 @@
+.project-partners-content {
+    padding: 20px;
+    text-align: center;
+    min-height: 800px;
+}
+
+.project-partners-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-partners-content p {
+    color: #555;
+    line-height: 1.6;
+}
