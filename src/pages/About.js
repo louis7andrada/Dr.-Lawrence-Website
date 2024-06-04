@@ -10,6 +10,14 @@ import '../styles/AboutSubPages.css';
 import staff1 from '../assets/images/Utoronto_coa.svg.png';
 import staff2 from '../assets/images/Utoronto_coa.svg.png';
 import staff3 from '../assets/images/Utoronto_coa.svg.png';
+import staff4 from '../assets/images/Utoronto_coa.svg.png';
+import staff6 from '../assets/images/Utoronto_coa.svg.png';
+import staff7 from '../assets/images/Utoronto_coa.svg.png';
+import staff8 from '../assets/images/Utoronto_coa.svg.png';
+import staff9 from '../assets/images/Utoronto_coa.svg.png';
+import staff10 from '../assets/images/Utoronto_coa.svg.png';
+import staff11 from '../assets/images/Utoronto_coa.svg.png';
+import staff12 from '../assets/images/Utoronto_coa.svg.png';
 import logo2 from "../assets/images/7ah4lwcm.png";
 
 function AboutUs() {
@@ -95,7 +103,7 @@ function StaffTrainees() {
             <h1>Staff & Trainees</h1>
             <div className="cards-container">
                 <div className="card">
-                    <img src={staff1} alt="Rwaida Akra" />
+                    <img src={staff4} alt="Rwaida Akra" />
                     <div className="info">
                         <h3>Rwaida Akra</h3>
                         <h4>Research Assistant</h4>
@@ -103,7 +111,7 @@ function StaffTrainees() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff2} alt="Olawale Dudubo" />
+                    <img src={staff5} alt="Olawale Dudubo" />
                     <div className="info">
                         <h3>Olawale Dudubo</h3>
                         <h4>Research Assistant</h4>
@@ -111,7 +119,7 @@ function StaffTrainees() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff3} alt="Asma Salem" />
+                    <img src={staff6} alt="Asma Salem" />
                     <div className="info">
                         <h3>Asma Salem</h3>
                         <h4>Research Coordinator</h4>
@@ -129,7 +137,7 @@ function CoInvestigators() {
             <h1>Co-Investigators</h1>
             <div className="cards-container">
                 <div className="card">
-                    <img src={staff1} alt="Rwaida Akra" />
+                    <img src={staff7} alt="Rwaida Akra" />
                     <div className="info">
                         <h3>Rwaida Akra</h3>
                         <h4>Research Assistant</h4>
@@ -137,7 +145,7 @@ function CoInvestigators() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff2} alt="Olawale Dudubo" />
+                    <img src={staff8} alt="Olawale Dudubo" />
                     <div className="info">
                         <h3>Olawale Dudubo</h3>
                         <h4>Research Assistant</h4>
@@ -145,7 +153,7 @@ function CoInvestigators() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff3} alt="Asma Salem" />
+                    <img src={staff9} alt="Asma Salem" />
                     <div className="info">
                         <h3>Asma Salem</h3>
                         <h4>Research Coordinator</h4>
@@ -163,7 +171,7 @@ function Collaborators() {
             <h1>Collaborators</h1>
             <div className="cards-container">
                 <div className="card">
-                    <img src={staff1} alt="Rwaida Akra" />
+                    <img src={staff10} alt="Rwaida Akra" />
                     <div className="info">
                         <h3>Rwaida Akra</h3>
                         <h4>Research Assistant</h4>
@@ -171,7 +179,7 @@ function Collaborators() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff2} alt="Olawale Dudubo" />
+                    <img src={staff11} alt="Olawale Dudubo" />
                     <div className="info">
                         <h3>Olawale Dudubo</h3>
                         <h4>Research Assistant</h4>
@@ -179,7 +187,7 @@ function Collaborators() {
                     </div>
                 </div>
                 <div className="card">
-                    <img src={staff3} alt="Asma Salem" />
+                    <img src={staff12} alt="Asma Salem" />
                     <div className="info">
                         <h3>Asma Salem</h3>
                         <h4>Research Coordinator</h4>
