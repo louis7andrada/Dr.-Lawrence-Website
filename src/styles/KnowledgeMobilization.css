@@ -1,15 +1,124 @@
 .knowledge-mobilization-content {
-    padding: 20px;
     text-align: center;
-    min-height: 800px;
+    min-height: 837px;
 }
 
-.knowledge-mobilization-content h1 {
+.knowledge-submenu {
+    background-color: #212d52;
+}
+
+.knowledge-submenu ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 10px;
+}
+
+.knowledge-submenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.knowledge-submenu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.knowledge-submenu a:hover {
+    text-decoration: underline;
+}
+
+.subpage4 {
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.subpage4 h1 {
     margin-bottom: 20px;
     color: #333;
 }
 
-.knowledge-mobilization-content p {
+.subpage4 p {
     color: #555;
     line-height: 1.6;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+.pdf-list {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.pdf-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.pdf-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 40px);
+}
+
+.pdf-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pdf-list a:hover {
+    text-decoration: underline;
+}
+
+.pdf-preview {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .pdf-preview {
+        width: 100%;
+    }
+
+    .pdf-list li {
+        flex: 1 1 100%;
+    }
+
+    .pdf-preview canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+.logo4 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo4 img {
+    max-width: 75%;
+    height: auto;
 }

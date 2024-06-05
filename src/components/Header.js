@@ -11,11 +11,11 @@ function Header() {
             <nav>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About us</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/project-partners">Project Partners</Link></li>
-                    <li><Link to="/research-activities">Research activities</Link></li>
-                    <li><Link to="/knowledge-mobilization">Knowledge mobilization activities</Link></li>
-                    <li><Link to="/contact">Contact us</Link></li>
+                    <li><Link to="/research-activities">Research Activities</Link></li>
+                    <li><Link to="/knowledge-mobilization">Knowledge Mobilization</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
                 </ul>
             </nav>

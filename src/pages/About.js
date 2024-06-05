@@ -11,6 +11,7 @@ import staff1 from '../assets/images/Utoronto_coa.svg.png';
 import staff2 from '../assets/images/Utoronto_coa.svg.png';
 import staff3 from '../assets/images/Utoronto_coa.svg.png';
 import staff4 from '../assets/images/Utoronto_coa.svg.png';
+import staff5 from '../assets/images/Utoronto_coa.svg.png';
 import staff6 from '../assets/images/Utoronto_coa.svg.png';
 import staff7 from '../assets/images/Utoronto_coa.svg.png';
 import staff8 from '../assets/images/Utoronto_coa.svg.png';

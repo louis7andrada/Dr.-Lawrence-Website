@@ -1,17 +1,17 @@
-.subpage {
+.subpage3 {
     padding: 20px;
     text-align: center;
     min-height: 783px;
 }
 
-.cards-container {
+.cards-container3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
+.card3 {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -19,26 +19,26 @@
     text-align: left;
 }
 
-.card img {
+.card3 img {
     width: 100%;
     height: auto;
 }
 
-.info {
+.info3 {
     padding: 10px;
 }
 
-.info h3 {
+.info3 h3 {
     margin: 0;
     font-size: 1.2em;
 }
 
-.info h4 {
+.info3 h4 {
     margin: 5px 0;
     color: #555;
 }
 
-.info p {
+.info3 p {
     font-size: 0.9em;
     color: #666;
 }
