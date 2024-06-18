@@ -1,8 +1,6 @@
 .about-content {
-    /*padding: 20px;*/
     text-align: center;
-    min-height: 783px;;
-    margin: 0 auto;
+    min-height: 837px;
 }
 
 .about-submenu {
@@ -30,9 +28,34 @@
 }
 
 .subpage {
+    padding: 20px;
+    text-align: center;
     max-width: 100%;
-    margin: 0 auto; /* Center the content */
-    text-align: center; /* Align text to the left for better readability */
+}
+
+.subpage-main{
+    padding-bottom: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.subpage h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.subpage-main .titleabout{
+    padding-top: 35px;
+}
+
+.subpage-main p{
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+    padding: 0 250px;
 }
 
 .subpage p{

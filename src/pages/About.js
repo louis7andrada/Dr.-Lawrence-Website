@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/About.css';
 import '../styles/AboutSubPages.css';
-
 
 // Import staff images
 import staff1 from '../assets/images/Utoronto_coa.svg.png';
@@ -21,13 +20,110 @@ import staff11 from '../assets/images/Utoronto_coa.svg.png';
 import staff12 from '../assets/images/Utoronto_coa.svg.png';
 import logo2 from "../assets/images/7ah4lwcm.png";
 
+const staffData = [
+    {
+        id: 'rwaida-akra',
+        name: 'Rwaida Akra',
+        role: 'Research Assistant',
+        description: 'Rwaida is a dentist and research assistant at the Migrant Oral Health Project...',
+        img: staff1,
+        category: 'principal'
+    },
+    {
+        id: 'olawale-dudubo',
+        name: 'Olawale Dudubo',
+        role: 'Research Assistant',
+        description: 'Olawale is a PhD student in the Faculty of Dentistry at McGill University...',
+        img: staff2,
+        category: 'principal'
+    },
+    {
+        id: 'asma-salem',
+        name: 'Asma Salem',
+        role: 'Research Coordinator',
+        description: 'Asma is a graduate student in the Master of Science-Dental Sciences program...',
+        img: staff3,
+        category: 'principal'
+    },
+    {
+        id: 'staff-4',
+        name: 'Staff Member 4',
+        role: 'Staff & Trainee',
+        description: 'Description for staff member 4...',
+        img: staff4,
+        category: 'staff'
+    },
+    {
+        id: 'staff-5',
+        name: 'Staff Member 5',
+        role: 'Staff & Trainee',
+        description: 'Description for staff member 5...',
+        img: staff5,
+        category: 'staff'
+    },
+    {
+        id: 'staff-6',
+        name: 'Staff Member 6',
+        role: 'Staff & Trainee',
+        description: 'Description for staff member 6...',
+        img: staff6,
+        category: 'staff'
+    },
+    {
+        id: 'co-investigator-7',
+        name: 'Co-Investigator 7',
+        role: 'Co-Investigator',
+        description: 'Description for co-investigator 7...',
+        img: staff7,
+        category: 'co-investigator'
+    },
+    {
+        id: 'co-investigator-8',
+        name: 'Co-Investigator 8',
+        role: 'Co-Investigator',
+        description: 'Description for co-investigator 8...',
+        img: staff8,
+        category: 'co-investigator'
+    },
+    {
+        id: 'co-investigator-9',
+        name: 'Co-Investigator 9',
+        role: 'Co-Investigator',
+        description: 'Description for co-investigator 9...',
+        img: staff9,
+        category: 'co-investigator'
+    },
+    {
+        id: 'collaborator-10',
+        name: 'Collaborator 10',
+        role: 'Collaborator',
+        description: 'Description for collaborator 10...',
+        img: staff10,
+        category: 'collaborator'
+    },
+    {
+        id: 'collaborator-11',
+        name: 'Collaborator 11',
+        role: 'Collaborator',
+        description: 'Description for collaborator 11...',
+        img: staff11,
+        category: 'collaborator'
+    },
+    {
+        id: 'collaborator-12',
+        name: 'Collaborator 12',
+        role: 'Collaborator',
+        description: 'Description for collaborator 12...',
+        img: staff12,
+        category: 'collaborator'
+    }
+];
+
 function AboutUs() {
     return (
-        <div className="subpage">
+        <div className="subpage-main">
             <h1 className="titleabout">About Us</h1>
-            <p>
-                <p>Lorem ipsum dolor sit amet. Ea voluptas sunt ut fugiat libero non quidem quod quo repellendus voluptas et dignissimos minima in doloribus deleniti. Est magnam ipsa ut nulla nulla ab porro voluptates. Quo explicabo soluta et impedit consequatur sit asperiores voluptatibus qui molestias dolores et magni vitae ex reiciendis nisi id quis odit. Qui iure provident ad earum minima est quia modi ad ipsum officiis sed alias placeat est ratione quia ad mollitia dolorem! Et voluptas perferendis et error blanditiis et assumenda animi. Aut pariatur explicabo et nobis officiis cum consectetur beatae et velit odit et voluptatum iste. Quo fugit repudiandae non expedita quisquam et velit fugiat qui quaerat sunt. Aut tempora quia nam consequatur perferendis ea error internos ea illum minima sit eius neque rem omnis quidem aut impedit dignissimos. Quo dolorem quia sit asperiores animi est corporis tenetur. </p>
-            </p>
+            <p>Lorem ipsum dolor sit amet. Ea voluptas sunt ut fugiat libero non quidem quod quo repellendus voluptas et dignissimos minima in doloribus deleniti...</p>
             <div className="logo2">
                 <img src={logo2} alt="alt img" />
             </div>
@@ -47,7 +143,6 @@ function About() {
                         <li><Link to="/about/staff-trainees">Staff & Trainees</Link></li>
                         <li><Link to="/about/co-investigators">Co-Investigators</Link></li>
                         <li><Link to="/about/collaborators">Collaborators</Link></li>
-                        {/* Add more submenu items here */}
                     </ul>
                 </div>
                 <Routes>
@@ -56,7 +151,7 @@ function About() {
                     <Route path="/staff-trainees" element={<StaffTrainees />} />
                     <Route path="/co-investigators" element={<CoInvestigators />} />
                     <Route path="/collaborators" element={<Collaborators />} />
-                    {/* Add more routes for subpages here */}
+                    <Route path="/staff/:id" element={<StaffDetail />} />
                 </Routes>
             </main>
             <Footer />
@@ -69,30 +164,18 @@ function PrincipalInvestigators() {
         <div className="subpage">
             <h1>Principal Investigators</h1>
             <div className="cards-container">
-                <div className="card">
-                    <img src={staff1} alt="Rwaida Akra" />
-                    <div className="info">
-                        <h3>Rwaida Akra</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Rwaida is a dentist and research assistant at the Migrant Oral Health Project...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff2} alt="Olawale Dudubo" />
-                    <div className="info">
-                        <h3>Olawale Dudubo</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Olawale is a PhD student in the Faculty of Dentistry at McGill University...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff3} alt="Asma Salem" />
-                    <div className="info">
-                        <h3>Asma Salem</h3>
-                        <h4>Research Coordinator</h4>
-                        <p>Asma is a graduate student in the Master of Science-Dental Sciences program...</p>
-                    </div>
-                </div>
+                {staffData.filter((staff) => staff.category === 'principal').map((staff) => (
+                    <Link to={`/about/staff/${staff.id}`} key={staff.id} className="card-link">
+                        <div className="card">
+                            <img src={staff.img} alt={staff.name} />
+                            <div className="info">
+                                <h3>{staff.name}</h3>
+                                <h4>{staff.role}</h4>
+                                <p>{staff.description}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     );
@@ -103,30 +186,18 @@ function StaffTrainees() {
         <div className="subpage">
             <h1>Staff & Trainees</h1>
             <div className="cards-container">
-                <div className="card">
-                    <img src={staff4} alt="Rwaida Akra" />
-                    <div className="info">
-                        <h3>Rwaida Akra</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Rwaida is a dentist and research assistant at the Migrant Oral Health Project...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff5} alt="Olawale Dudubo" />
-                    <div className="info">
-                        <h3>Olawale Dudubo</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Olawale is a PhD student in the Faculty of Dentistry at McGill University...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff6} alt="Asma Salem" />
-                    <div className="info">
-                        <h3>Asma Salem</h3>
-                        <h4>Research Coordinator</h4>
-                        <p>Asma is a graduate student in the Master of Science-Dental Sciences program...</p>
-                    </div>
-                </div>
+                {staffData.filter((staff) => staff.category === 'staff').map((staff) => (
+                    <Link to={`/about/staff/${staff.id}`} key={staff.id} className="card-link">
+                        <div className="card">
+                            <img src={staff.img} alt={staff.name} />
+                            <div className="info">
+                                <h3>{staff.name}</h3>
+                                <h4>{staff.role}</h4>
+                                <p>{staff.description}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     );
@@ -137,30 +208,18 @@ function CoInvestigators() {
         <div className="subpage">
             <h1>Co-Investigators</h1>
             <div className="cards-container">
-                <div className="card">
-                    <img src={staff7} alt="Rwaida Akra" />
-                    <div className="info">
-                        <h3>Rwaida Akra</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Rwaida is a dentist and research assistant at the Migrant Oral Health Project...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff8} alt="Olawale Dudubo" />
-                    <div className="info">
-                        <h3>Olawale Dudubo</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Olawale is a PhD student in the Faculty of Dentistry at McGill University...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff9} alt="Asma Salem" />
-                    <div className="info">
-                        <h3>Asma Salem</h3>
-                        <h4>Research Coordinator</h4>
-                        <p>Asma is a graduate student in the Master of Science-Dental Sciences program...</p>
-                    </div>
-                </div>
+                {staffData.filter((staff) => staff.category === 'co-investigator').map((staff) => (
+                    <Link to={`/about/staff/${staff.id}`} key={staff.id} className="card-link">
+                        <div className="card">
+                            <img src={staff.img} alt={staff.name} />
+                            <div className="info">
+                                <h3>{staff.name}</h3>
+                                <h4>{staff.role}</h4>
+                                <p>{staff.description}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     );
@@ -171,31 +230,37 @@ function Collaborators() {
         <div className="subpage">
             <h1>Collaborators</h1>
             <div className="cards-container">
-                <div className="card">
-                    <img src={staff10} alt="Rwaida Akra" />
-                    <div className="info">
-                        <h3>Rwaida Akra</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Rwaida is a dentist and research assistant at the Migrant Oral Health Project...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff11} alt="Olawale Dudubo" />
-                    <div className="info">
-                        <h3>Olawale Dudubo</h3>
-                        <h4>Research Assistant</h4>
-                        <p>Olawale is a PhD student in the Faculty of Dentistry at McGill University...</p>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src={staff12} alt="Asma Salem" />
-                    <div className="info">
-                        <h3>Asma Salem</h3>
-                        <h4>Research Coordinator</h4>
-                        <p>Asma is a graduate student in the Master of Science-Dental Sciences program...</p>
-                    </div>
-                </div>
+                {staffData.filter((staff) => staff.category === 'collaborator').map((staff) => (
+                    <Link to={`/about/staff/${staff.id}`} key={staff.id} className="card-link">
+                        <div className="card">
+                            <img src={staff.img} alt={staff.name} />
+                            <div className="info">
+                                <h3>{staff.name}</h3>
+                                <h4>{staff.role}</h4>
+                                <p>{staff.description}</p>
+                            </div>
+                        </div>
+                    </Link>
+                ))}
             </div>
+        </div>
+    );
+}
+
+function StaffDetail() {
+    const { id } = useParams();
+    const staff = staffData.find((s) => s.id === id);
+
+    if (!staff) {
+        return <div>Staff not found</div>;
+    }
+
+    return (
+        <div className="subpage">
+            <h1>{staff.name}</h1>
+            <img src={staff.img} alt={staff.name} />
+            <h4>{staff.role}</h4>
+            <p>{staff.description}</p>
         </div>
     );
 }

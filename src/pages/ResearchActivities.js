@@ -16,9 +16,9 @@ import logo3 from "../assets/images/7ah4lwcm.png";
 
 function Activities() {
     return (
-        <div className="subpage3">
+        <div className="subpage3-main">
             <main className="research-activities-content">
-                <h1>Research Activities</h1>
+                <h1 className="titleabout">Research Activities</h1>
                 <p>
                     Our research activities focus on improving the oral health of refugeed people through various projects and studies. We collaborate with
                     numerous institutions and community organizations to conduct research that addresses the unique challenges faced by refugeed populations.
@@ -67,7 +67,17 @@ function CurrentResearchActivities() {
                     <div className="info3">
                         <h3>Research 1</h3>
                         <h4>Current Research</h4>
-                        <p>Description of current research activity 1...</p>
+                        <p>Description of current research activity 1...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
                 <div className="card3">
@@ -75,7 +85,17 @@ function CurrentResearchActivities() {
                     <div className="info3">
                         <h3>Research 2</h3>
                         <h4>Current Research</h4>
-                        <p>Description of current research activity 2...</p>
+                        <p>Description of current research activity 2...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
                 <div className="card3">
@@ -83,7 +103,17 @@ function CurrentResearchActivities() {
                     <div className="info3">
                         <h3>Research 3</h3>
                         <h4>Current Research</h4>
-                        <p>Description of current research activity 3...</p>
+                        <p>Description of current research activity 3...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +131,17 @@ function PastResearchActivities() {
                     <div className="info3">
                         <h3>Research 4</h3>
                         <h4>Past Research</h4>
-                        <p>Description of past research activity 4...</p>
+                        <p>Description of past research activity 4...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
                 <div className="card3">
@@ -109,7 +149,17 @@ function PastResearchActivities() {
                     <div className="info3">
                         <h3>Research 5</h3>
                         <h4>Past Research</h4>
-                        <p>Description of past research activity 5...</p>
+                        <p>Description of past research activity 5...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
                 <div className="card3">
@@ -117,7 +167,17 @@ function PastResearchActivities() {
                     <div className="info3">
                         <h3>Research 6</h3>
                         <h4>Past Research</h4>
-                        <p>Description of past research activity 6...</p>
+                        <p>Description of past research activity 6...Description of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research activityDescription of current research
+                            activityDescription of current research of current research activityDescription of current research activity</p>
                     </div>
                 </div>
             </div>

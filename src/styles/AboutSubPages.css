@@ -1,3 +1,60 @@
+.about-content {
+    text-align: center;
+    min-height: 783px;
+    margin: 0 auto;
+}
+
+.about-submenu {
+    background-color: #212d52;
+}
+
+.about-submenu ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 10px;
+}
+
+.about-submenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.about-submenu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about-submenu a:hover {
+    text-decoration: underline;
+}
+
+.subpage {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subpage p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+}
+
+.logo2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo2 img {
+    max-width: 75%;
+    height: auto;
+}
+
 .subpage {
     padding: 20px;
     text-align: center;
@@ -17,6 +74,19 @@
     overflow: hidden;
     max-width: 300px;
     text-align: left;
+    margin: 20px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {

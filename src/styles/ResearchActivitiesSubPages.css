@@ -1,44 +1,125 @@
-.subpage3 {
-    padding: 20px;
+.research-activities-content {
     text-align: center;
     min-height: 783px;
 }
 
+.activities-submenu {
+    background-color: #212d52;
+}
+
+.activities-submenu ul {
+    margin-top: 0;
+    list-style: none;
+    padding: 10px;
+}
+
+.activities-submenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.activities-submenu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.activities-submenu a:hover {
+    text-decoration: underline;
+}
+
+.subpage3 {
+    max-width: 100%;
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Align text to the left for better readability */
+}
+
+.subpage3 p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%; /* Adjusted max-width for better readability */
+}
+
+.logo3 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo3 img {
+    max-width: 75%;
+    height: auto;
+}
+
 .cards-container3 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; /* Make the cards stack vertically */
+    align-items: center; /* Center the cards horizontally */
+    gap: 20px; /* Add space between the cards */
 }
 
 .card3 {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    max-width: 300px;
+    width: 80%; /* Increase the width to 80% of the container */
+    max-width: 1200px; /* Set a maximum width for the cards */
     text-align: left;
+    margin-bottom: 20px; /* Add space below each card */
+    padding: 20px; /* Add padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visualization */
+    background-color: #fff; /* Add background color for better contrast */
 }
 
 .card3 img {
-    width: 100%;
+    width: 100px; /* Adjust the width of the image */
     height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add margin below */
 }
 
 .info3 {
-    padding: 10px;
+    padding: 0 20px; /* Adjust padding for better spacing */
+    text-align: center; /* Center align text inside the card */
 }
 
 .info3 h3 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.8em; /* Increase font size */
+    color: #333; /* Adjust color for better readability */
 }
 
 .info3 h4 {
-    margin: 5px 0;
+    margin: 10px 0; /* Add margin above and below */
     color: #555;
+    font-size: 1.4em; /* Increase font size */
 }
 
 .info3 p {
-    font-size: 0.9em;
+    font-size: 1.2em; /* Increase font size */
     color: #666;
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+@media (max-width: 768px) {
+    .card3 {
+        width: 100%; /* Make the cards take full width on smaller screens */
+        max-width: 100%; /* Remove max-width constraint on smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .info3 h3 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .info3 h4 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .info3 p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
 }
